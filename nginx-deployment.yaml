@@ -41,11 +41,11 @@ metadata:
       kubernetes.io/tls-acme: 'true'
       kubernetes.io/ingress.class: nginx
     labels:
-      app: nginx-ingress
+      app: nginx-container
 spec:
   rules:
   - http:
       paths:
       - backend:
-          serviceName: nginx-service
+          serviceName: my-nginx-svc
           servicePort: 8080
