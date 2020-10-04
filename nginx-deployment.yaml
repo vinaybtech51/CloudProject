@@ -33,7 +33,7 @@ spec:
   - port: 80
   selector:
     app: nginx-template	
-apiVersion: extensions/v1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
     name: nginx-ingress
